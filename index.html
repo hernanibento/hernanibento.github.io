@@ -1,69 +1,480 @@
 <!DOCTYPE html>
-<!-- saved from url=(0067)https://mackeycreativelab.com/wp-content/uploads/2014/09/index.html -->
-<html class="gr__mackeycreativelab_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width">
-<title>Performing Maintenance</title>
-<meta name="description" content="Performing maintenance...">
-<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
-    
-<style type="text/css">
-    /* Reset */
-  html, body, div, span, applet, object, iframe,
-  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-  a, abbr, acronym, address, big, cite, code,
-  del, dfn, em, img, ins, kbd, q, s, samp,
-  small, strike, strong, sub, sup, tt, var,
-  b, u, i, center,
-  dl, dt, dd, ol, ul, li,
-  fieldset, form, label, legend,
-  table, caption, tbody, tfoot, thead, tr, th, td,
-  article, aside, canvas, details, embed, 
-  figure, figcaption, footer, header, hgroup, 
-  menu, nav, output, ruby, section, summary,
-  time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-  }
-  /* HTML5 display-role reset for older browsers */
-  article, aside, details, figcaption, figure, 
-  footer, header, hgroup, menu, nav, section {
-    display: block;
-  }
-  body {
-    line-height: 1;
-  }
-  ol, ul {
-    list-style: none;
-  }
-  blockquote, q {
-    quotes: none;
-  }
-  blockquote:before, blockquote:after,
-  q:before, q:after {
-    content: '';
-    content: none;
-  }
-  table {
-    border-collapse: collapse;
-    border-spacing: 0;
-  }
-      
-      html {font-size: 16px;}
-      body { text-align: center; padding: 150px; }
-      h1 { font-size: 40px; font-weight: bold; margin-bottom: 1rem;}
-      p {font-size: 1.5rem; margin-bottom: 1rem;}
-      body { font: 20px Helvetica, sans-serif; color: #333; }
-      #article { display: block; text-align: left; width: 650px; margin: 0 auto; }
-      a { color: #dc8100; text-decoration: none; }
-      a:hover { color: #333; text-decoration: none; }
-    </style>
+<html lang="en">
+<!-- 
+    ####################################    
+    #                                  #
+    # Welcome to the source code :D    #
+    #                                  #
+    #                                  #
+    #  Was so easy right?              #
+    #                                  #
+    #                                  # 
+    #  Love you! <3                    #
+    ####################################    
+     -->
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>My Portfolio</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
-<body data-gr-c-s-loaded="true">
-<div id="article">
-<h1>COMING SOON!!!!</h1>
-</div>
-<script data-cfasync="false" src="./Performing Maintenance_files/email-decode.min.js"></script>
+
+<body id="page-top" oncontextmenu="return false">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Nav-->
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a id="nav_head" class="navbar-brand js-scroll-trigger" href="#page-top">Hernâni Bento</a>
+            <button
+                class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
+                type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                            href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                            href="#about">About me</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                            href="#contact">Contact</a></li>
+                    <!--                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                            href="hint.html">Hint :D</a></li> -->
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Main-->
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- Main Avatar-->
+            <img id="foto" class="masthead-avatar mb-5" src="assets/img/avatar-removebg-preview.png" alt="" />
+            <!-- Main Heading-->
+            <h1 id="nome" class="masthead-heading text-uppercase mb-0">Hernâni Bento</h1>
+            <!-- Icon Div-->
+            <div id="estrela1" class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Main subhead-->
+            <p id="skills" class="masthead-subheading font-weight-light mb-0">Cyber Security - Student - Pentest</p>
+        </div>
+    </header>
+    <!-- SECTION PORT-->
+    <section class="page-section portfolio" id="portfolio">
+        <div class="container">
+            <!-- HEAD PORT-->
+            <h2 data-aos="fade-right" data-aos-offset="120" data-aos-delay="100"
+                class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+            <!-- Icon Div-->
+            <div data-aos="fade-right" data-aos-offset="120" data-aos-delay="100" class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <div class="row justify-content-center">
+                <!-- Portfolio Pentesting-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img data-aos="fade-in" data-aos-offset="120" data-aos-delay="100" class="img-fluid"
+                            src="assets/img/portfolio/hacker.png" alt="" />
+                    </div>
+                </div>
+                <!-- Portfolio Coding-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img data-aos="fade-in" data-aos-offset="120" data-aos-delay="100" class="img-fluid"
+                            src="assets/img/portfolio/code.png" alt="" />
+                    </div>
+                </div>
+                <!-- Portfolio Future?-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img data-aos="fade-in" data-aos-offset="120" data-aos-delay="100" class="img-fluid"
+                            src="assets/img/portfolio/idea.png" alt="" />
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img data-aos="fade-in" data-aos-offset="120" data-aos-delay="100" class="img-fluid"
+                            src="assets/img/portfolio/cert.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Sec-->
+    <section class="page-section bg-primary text-white mb-0" id="about">
+        <div class="container">
+            <!-- About Sec head-->
+            <h2 data-aos="fade-right" data-aos-offset="120" data-aos-delay="100"
+                class="page-section-heading text-center text-uppercase text-white">About me</h2>
+            <!-- Icon Div-->
+            <div data-aos="fade-right" data-aos-offset="120" data-aos-delay="100" class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- About sec INFO-->
+            <div class="row">
+                <div data-aos="fade-right" data-aos-offset="120" data-aos-delay="100" class="col-lg-4 ml-auto">
+                    <p class="lead">Hi! My name is Hernâni and I'am 20 years old, right now I'am a cyber security
+                        student, and I got a big passion on this area, to be more precise in pentesting.
+                    </p>
+                </div>
+                <div data-aos="fade-right" data-aos-offset="120" data-aos-delay="100" class="col-lg-4 mr-auto">
+                    <p class="lead">I'm working to make a real difference in the world, so for that I'm always
+                        motivated, demonstrating integrity,
+                        respect and team spirit. I like to take new challenges and discover new things I consider my
+                        self a researcher, with the objective
+                        to be better in my area, and on a personal level.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Location-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    </p>
+                </div>
+                <!-- Footer Social Icons-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 data-aos="fade-up" data-aos-offset="120" data-aos-delay="100" id="contact"
+                        class="text-uppercase mb-4">Contacts</h4>
+                    <p data-aos="fade-up" data-aos-offset="120" data-aos-delay="100">Feel free to see my socials, and to
+                        contact me <br></p>
+                    <a data-aos="fade-up" data-aos-offset="120" data-aos-delay="100"
+                        class="btn btn-outline-light btn-social mx-1" href="https://github.com/xbeatzsec"
+                        target="_blank"><i class="fab fa-fw fa-github"></i></a>
+                    <a data-aos="fade-up" data-aos-offset="120" data-aos-delay="100"
+                        class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/hernanibent0/"
+                        target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                    <a data-aos="fade-up" data-aos-offset="120" data-aos-delay="100"
+                        class="btn btn-outline-light btn-social mx-1" data-toggle="modal" data-target="#portfolioModal4"
+                        href="#!"><i class="fab fa-fw fa-google"></i></a>
+                </div>
+                <!-- Footer About Text-->
+                <div class="col-lg-4">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Copyright Section-->
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Copyright © Nani 2020</small></div>
+    </div>
+
+    <div class="scroll-to-top d-lg-none position-fixed">
+        <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i
+                class="fa fa-chevron-up"></i></a>
+    </div>
+    <!-- Portfolio Modals-->
+    <!-- Portfolio Modal 1-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog"
+        aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                                    id="portfolioModal1Label">Pentesting | CTF</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/hacker.png" alt="" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-5">Learning Penetration Testing and Ethical Hacking <br>
+                                    I'am a CTF player make this a good way to learn about hacking and pentesting<br>
+                                    Actually I'm in December 🥇 Top 5 in Portugal at <a href="https://tryhackme.com"
+                                        target="_blank">TryHackMe</a><br>
+                                    And All Time 🥇 Top 50 in Portugal at <a href="https://tryhackme.com"
+                                        target="_blank">TryHackMe</a> too</p>
+                                <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 2-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog"
+        aria-labelledby="portfolioModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                                    id="portfolioModal2Label">Code | Programming</h2>
+                                <!-- Iconz-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio M-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/code.png" alt="" />
+                                <!-- Portfolio M -TEXTO-->
+                                <p class="mb-5">I'm learning and developing in Python, this is my favorite language and
+                                    this is the language that I use the most in any context. <br>
+                                    Also I know and got some experience in other programming languages like C/C++, SQL,
+                                    HTML, CSS.<br>
+                                    And now I want to go more deeply into JavaScript, learning all the basics and then
+                                    the most advanced concepts.
+                                </p>
+                                <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 3-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog"
+        aria-labelledby="portfolioModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                                    id="portfolioModal3Label">Vision | Future</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/idea.png" alt="" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-5"></p>What is my ambition?<br><br>
+                                On the future I want to be a Penetration Tester, staying humble and keep learning
+                                everyday about my area of interess. <br>
+                                And after that I want to end my carrer with the charge of Chief Information Security
+                                Officer. <br>
+                                Also in the future I want to take big certificates to be able to reach my objective,
+                                such as: <br>
+                                CEH, OSCP, OSWE, eJPT.</p>
+                                <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 4-->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog"
+        aria-labelledby="portfolioModal4Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                                    id="portfolioModal4Label">Email contact</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <a href="mailto:hernanifurtado@gmail.com">
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/gmail.jpg"
+                                        alt="" /></a>
+                                <!-- Portfolio Modal - Text-->
+                                <b>
+                                    <p class="email">Click on the image to contact me!</p>
+                                </b>
+                                <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 5-->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog"
+        aria-labelledby="portfolioModal5Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                                    id="portfolioModal5Label">CERTIFICATES</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cert_inside.png" alt="" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-5"><a
+                                        href="https://www.credential.net/4d1f3c0b-a30c-44ff-8221-394cfa436736#gs.or7gc4"
+                                        target="_blank">ICSI
+                                        | CNSS Certified Network Security Specialist ✅</a><br>
+                                    <a href="https://training.fortinet.com/badges/badge.php?hash=000b6d24c42be85a7cb81be52ce080e94c50a98d"
+                                        target="_blank">Fortinet
+                                        | NSE 1 Network Security Associate ✅</a><br>
+                                    <a href="https://training.fortinet.com/badges/badge.php?hash=ff57be9c92ba12c072c74d6c04c5ffa756d4527e"
+                                        target="_blank">Fortinet
+                                        | NSE 2 Network Security Associate ✅</a><br>
+                                    <a href="https://www.udemy.com/certificate/UC-83a946b2-0c90-4c0a-b002-82399931a464/"
+                                        target="_blank">Udemy
+                                        | Fundamentals of Ethical Hacking ✅</a><br>
+                                    Intro to Digital Forensics and Incident Response (Ongoing) 🚧</p>
+                                <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 6-->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog"
+        aria-labelledby="portfolioModal6Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                                    id="portfolioModal6Label">Submarine</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
+                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
+                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                </p>
+                                <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Contact form JS-->
+    <script src="assets/mail/jqBootstrapValidation.js"></script>
+    <script src="assets/mail/contact_me.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
